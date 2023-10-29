@@ -269,7 +269,7 @@ section{
     background: var(--back);
 }
 
-.footer  .box-container{
+.footer  .box-containern{
     display: grid;
     grid-auto-columns: repeat(auto-fit(25rem , 1fr));
     gap: 2rem;
@@ -311,3 +311,57 @@ section{
 }
 
 /*media */
+
+@media (max_width:991px) {
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem 5%;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .header #menu-btn{
+        display: inline-block;
+    }
+
+    .header .acceuil-introduction{
+        position: fixed;
+        top: 0; right: -105%;
+        width: 30rem;
+        background: #fff;
+        height: 100%;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+         -ms-flex-flow: column;
+              flex-flow: column;
+        -webkit-box-pack: center; 
+             -ms-flex-pack:center ;
+                 -ms-text-justify: center;
+        z-index: 1200;               
+    }
+    
+    .header .acceuil-introduction #close-lien-group{
+        display: block;
+    }
+
+    .header .acceuil-introduction.active{
+        box-shadow: 0 0 0 100vw rgba(0,0,0,0.8);
+        right: 0;
+    }
+    .header .acceuil-introduction a{
+        color: var(--main-color);
+        display: block;
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 3rem;
+    }
+    
+}
