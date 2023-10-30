@@ -35,7 +35,10 @@ section{
 .btn{
     display: inline-block;
     margin-top: 1rem;
-    padding: 1rem 3rem;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 1.8rem;
     border: 0.1rem solid var(--primary-color);
     background: var(--primary-color);
@@ -92,7 +95,7 @@ section{
 /*home*/
 
 .home{
-    min-height: 100vh;
+
     display: flex;
     align-items: center;
     background: url(images/fond\ \(3\).jpg);
@@ -182,9 +185,10 @@ section{
   
 
 /*menu*/
-.menu .box-container{
+.box-container{
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    grid-template-columns: 350px 350px 350px;
     gap: 1.5rem;
 }
 
@@ -220,7 +224,6 @@ section{
 }
 
 /*contact*/
-
 /*.contact .row{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -232,17 +235,16 @@ section{
         flex-wrap: wrap;
     gap: 2em;        
 }*/
-
+ 
 .contact .row .images{
     -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
          flex: 1 1 40rem;
 }
 
-.contact .row form{
-    -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-         flex: 1 1 40rem;
+.contact{
+        width: 100%;
+        height: 100vh;
     border: 0.1rem solid var(--main-color);
     padding: 1rem;     
 }
@@ -256,23 +258,21 @@ section{
 
 }
 
-.contact .row form .inputbox{
+.inputbox{
+    height: 5vh;
     display: flex;
     align-items: center;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     background: var(--back);
-    border: var(--border);
 }
-
 .contact .row form .inputbox span{
     color: var(--primary-color);
     font-size: 2rem;
     padding-left:2rem;
 }
-
 .contact .row form .inputbox input{
-    width: 50%;
+
     padding: 2rem;
     font-size: 1.7rem;
     color: #fff;
