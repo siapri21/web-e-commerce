@@ -172,14 +172,14 @@ section{
 }
 
 .menu .box-container .box{
-    padding: 5rem;
+    padding: 0.5rem;
     text-align: center;
     background-color: var(--back);
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
 }
 
 .menu .box-container .box img{
-    height: 10rem;
+    height: 15rem;
 }
 
 .menu .box-container .box h3{
@@ -363,5 +363,5 @@ section{
         text-align: center;
         font-size: 3rem;
     }
-    
+
 }
