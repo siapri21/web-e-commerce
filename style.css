@@ -427,5 +427,21 @@ section{
         text-align: center;
         font-size: 3rem;
     }
+    .home{
+        background-position: left;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .home .content h3{
+        font-size: 4rem;
+    }
+}
+
+@media(max-width:450px) {
+
+    .html{
+        font-size: 50%;
+    }
+    
 }
